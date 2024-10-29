@@ -19,7 +19,6 @@ import {
 } from "@nextui-org/react";
 import {
   Autocomplete,
-  AutocompleteSection,
   AutocompleteItem,
 } from "@nextui-org/react";
 export default function App() {
