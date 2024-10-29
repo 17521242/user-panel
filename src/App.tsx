@@ -68,7 +68,7 @@ export default function App() {
                     <Input label="Product category" />
                     <Autocomplete
                     label="Select a customer"
-                    className="max-w-xs">
+                    >
                       {customer.map((item)=>(
                         <AutocompleteItem key={item.id}>
                           {item.name}
