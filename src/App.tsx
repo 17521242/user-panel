@@ -17,8 +17,19 @@ import {
   TableRow,
   TableCell,
 } from "@nextui-org/react";
+import {
+  Autocomplete,
+  AutocompleteSection,
+  AutocompleteItem,
+} from "@nextui-org/react";
 export default function App() {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
+  const customer = [
+    { id: "01", name: "Tuong Nguyen" },
+    { id: "02", name: "ABC" },
+  ];
+
   return (
     <div className="h-screen w-full bg-[#f1f1f1]">
       <div className="flex bg-white">
@@ -55,6 +66,16 @@ export default function App() {
                     <Input label="Product ID" />
                     <Input label="Product name" />
                     <Input label="Product category" />
+                    <Autocomplete
+                    label="Select a customer"
+                    className="max-w-xs">
+                      {customer.map((item)=>(
+                        <AutocompleteItem key={item.id}>
+                          {item.name}
+                        </AutocompleteItem>
+                      ))}
+
+                    </Autocomplete>
                     <DatePicker label="Date" />
                   </ModalBody>
                   <ModalFooter>
