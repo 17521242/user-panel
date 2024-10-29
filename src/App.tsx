@@ -1,6 +1,7 @@
 import { Switch, useDisclosure } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
+import { DatePicker } from "@nextui-org/react";
 import {
   Modal,
   ModalContent,
@@ -54,7 +55,7 @@ export default function App() {
                     <Input label="Product ID" />
                     <Input label="Product name" />
                     <Input label="Product category" />
-                    <Input label="Date" />
+                    <DatePicker label="Date" />
                   </ModalBody>
                   <ModalFooter>
                     <Button color="primary" variant="solid">
