@@ -53,6 +53,7 @@ export default function App() {
                   <ModalBody className="">
                     <Input label="Product ID" />
                     <Input label="Product name" />
+                    <Input label="Product category" />
                     <Input label="Date" />
                   </ModalBody>
                   <ModalFooter>
