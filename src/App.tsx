@@ -27,6 +27,7 @@ export default function App() {
   const customer = [
     { id: "01", name: "Tuong Nguyen" },
     { id: "02", name: "ABC" },
+    { id: "03", name: "Thanh Tu" },
   ];
 
   return (
